@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'wilky';
+    src: url('./fonts/wilkysta.ttf') format('truetype');
+   
+}
+@font-face {
+    font-family: 'gilroy';
+   src: url('./fonts/Gilroy-ExtraBold.otf'),
+    url('./fonts/Gilroy-Light.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    margin: 40px 0px;
+    font-family: 'gilroy', sans-serif;
+    background-color: #E0D8CC;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+
+}
+
+body > *{
+    grid-column: 2;
+}
+
+
+/* ---------------------------------------------nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ham{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    height: 10px;
+    width: 30px;
+}
+
+.lgo{
+    text-transform: capitalize;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+  
+}
+
+button:hover{
+    background-color: #E3FD1F;
+    color: black;
+}
+
+hr{
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+nav .logo{
+    height: auto;
+    border: none;
+    font-size: 1.5rem ;
+
+}
+/* ----------------------------------------hero */
+
+.wrapper{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+
+}
+
+.heroimg{
+    width: 100%;
+   
+}
+.wrapper .heroimg img{
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    clip-path: polygon(51% 2%, 100% 1%, 98% 54%, 100% 100%, 52% 99%, 0 100%, 1% 52%, 0 0);
+  
+
+    
+}
+
+h1{
+    font-family: 'wilky', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    width: 13ch;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top:50px;
+    left: 50px;
+}
+
+.wrapper button{
+    margin: 30px;
+    width: 160px;
+    height: 45px;
+}
+
+.hero-foot{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    border-left: rgb(109, 109, 109) 2px solid;
+    border-right: rgb(82, 82, 82) 2px solid;
+    margin: 10px;
+    height: 100px;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+/* -------------------------------------------------------------sub-hero */
+
+.subwrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.wrapper h4{
+    margin-bottom: 50px;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.subwrap img{
+    height: 400px;
+    overflow: hidden;
+    width: 40%;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 30px;
+   
+}
+
+
+
+.txt{
+    width: 50%;
+   padding-left: 60px;
+    border-left: 2px solid rgb(43, 42, 42);
+}
+
+.txt p{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgb(34, 34, 34);
+}
+
+.txt h2{
+    font-family: 'wilky' , sans-serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.txt button{
+    margin: 0;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------------------cards */
+
+.green{
+    grid-column: 1/-1;
+    color: white;
+    margin-top: 30px;
+    padding-top: 50px;
+    background-color:#465A4F ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+}
+
+
+.green h4{
+    text-transform: uppercase;
+    font-family: 'wilky', sans-serif;
+    font-size: 3rem;
+    width: 17ch;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+   
+}
+
+.green > p{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 60ch;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+
+
+.green img{
+    height: 350px;
+   
+}
+
+.card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;  
+   
+}
+
+.card h6{
+    font-family: 'wilky', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card p{
+    font-size: 11px;
+   line-height: 1.5;
+   width: 30ch;
+   margin: 15px 0;
+  
+}
+
+.card a:visited,a{
+    color: #E3FD1F;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.card img{
+    border-radius: 4px;
+    margin-top: 0;
+    height: 300px;
+  
+}
+
+.card-foot{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* -------------------------------------wrap-2 */
+
+.wrap2{
+    grid-column: 1/-1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.wrap2 .txt{
+    border: none;
+    padding-left: 80px ;
+}
+
+.wrap2 .card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    width: 500px;
+    margin-bottom: 50px;
+  
+}
+
+.wrap2 img{
+    border-radius: 20px;
+}
+
+.wrap2 a{
+    color: #465A4F;
+    font-size: 12px;
+}
+
+.wrap2 p{
+    width: 30ch;
+}
+
+
+/* ---------------------------------------------------foooter-hero */
+
+ 
+
+.foot{
+   grid-column: 1/-1;
+    margin-top: 50px;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.507)), url("https://images.unsplash.com/photo-1584696993692-a53190f76609?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 600px;
+    background-position: 0 -300px;
+    background-size: cover;
+    clip-path: polygon(53% 8%, 78% 6%, 100% 0, 99% 100%, 75% 95%, 52% 94%, 28% 95%, 0 100%, 0 0, 29% 6%);
+ 
+    
+}
+
+.foot .txt{
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    border: none;
+}
+
+.foot .txt p{
+    color: white;
+    width: 30ch;
+    font-size: 14px;
+
+}
+
+.foot .txt button{
+    background-color: #E3FD1F;
+    color: black;
+    width: 150px;
+}
+
+/* -----------------------------------------------footer */
+.footer{
+    margin-top: 30px;
+    text-transform: capitalize;
+    
+}
+
+.footer .right{
+    display: flex;
+    gap: 30px;
+}
+.footer .left{
+    gap: 30px;
+}
+
+small{
+    text-align: center;
+    font-size: 10px;
+    color: #465A4F;
+    margin-top: 20px;
+}
+
+
+/* --------------------------------media queries */
+
+@media  (min-width: 1300px) {
+    
+    body{
+       grid-template-columns: 2fr 5fr 2fr;
+    }
+
+    .card-foot > *{
+        grid-column: 2;
+    }
+}
